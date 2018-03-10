@@ -12,4 +12,5 @@ RUN wget https://github.com/jwilder/dockerize/releases/download/$DOCKERIZE_VERSI
 # Setup app environment
 ADD tmp/wherehows-frontend /application
 WORKDIR /application
+RUN rm -rf RUNNING_PID
 RUN mkdir -p logs
